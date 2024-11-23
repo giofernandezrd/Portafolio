@@ -8,13 +8,448 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-<body>
+  <body>
     <!-------------------->
     <!---Menu Principal--->
     <!-------------------->
     <nav id="desktop-nav">
-        <div class="logo">Giovanny Fernandez</div>
-        <div>
+      <div class="logo"></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!---------------------->
+    <!---Menu para mobiles-->
+    <!---------------------->
+    <nav id="hamburger-nav">
+      <div class="logo"></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!---------------------->
+    <!------Sections-------->
+    <!---------------------->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Gio profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Giovanny Fernández</h1>
+        <p class="section__text__p2">Marketing Specialist</p>
+        <p class="resume">Download My Resume</p>
+    <!---------------------->
+    <!----Download CV------->
+    <!---------------------->
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-e.pdf')"
+          >
+          English
+          </button>
+    <!-------------------------->            
+    <!------Contact Me---------->
+    <!-------------------------->
+          <button class="btn btn-color-1" 
+          onclick="window.open('./assets/resume-s.pdf')"
+          >
+          Español
+          </button>
+        </div>
+    <!-------------------------->
+    <!------Social Media-------->
+    <!-------------------------->
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/giovanny-fernandez/'"
+          />
+          
+          <!--GitHub-->
+          <img
+            src="./assets/github.png"
+            alt="Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/giofernandezrd'"
+          />
+          <!--Instgram-->
+          <img
+            src="./assets/instagram.png"
+            alt="Instagram profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/giofernandezrd/'"
+          />
+        </div>
+      </div>
+    </section>
+    <!-------------------------->
+    <!---------About------------>
+    <!-------------------------->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+    <!-------------------------->
+    <!------Experience---------->
+    <!-------------------------->
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>5+ years <br />Marketing Manager</p>
+            </div>
+    <!-------------------------->
+    <!-------Discipline--------->
+    <!-------------------------->
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Discipline</h3>
+              <p>Marketing Management<br/>& Project Management</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hola te doy la bienvenida a mi historia, mi nombre es Giovanny Fernandez, pero mis amigos me llaman Gio, inicie mi camino profesional como diseñador gráfico y luego creador de páginas web en WordPress, pero siendo un apasionado del crecimiento incursione en otras áreas dentro del departamento de marketing hasta llevar a ser gerente de mercadeo.
+            </p><br>
+            <p>
+              He realizado muchos estudios y he recolectado basta experiencia que podrás encontrar aquí, entre mis éxitos esta la elaboración de proyectos publicitarios, realización de eventos comerciales y empresariales, manejo de equipos en el área de marketing, lanzamiento de proyectos proceso para convertirme en programador FrontEnd.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <!-------------------------->
+    <!-------Experience--------->
+    <!-------------------------->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+    <!---------------------------------------------------> 
+    <!-----------------Left  Side------------------------> 
+    <!--------------------------------------------------->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+    <!-------------------------->
+    <!-----Textos de Exp-------->
+    <!--------------------------> 
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+    <!-------------------> 
+    <!-------------------> 
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+    <!-------------------> 
+    <!------------------->
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+    <!-------------------> 
+    <!------------------->
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+    <!-------------------> 
+    <!------------------->
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+    <!-------------------> 
+    <!------------------->
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+    <!---------------------------------------------------> 
+    <!-----------------Right  Side-----------------------> 
+    <!--------------------------------------------------->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+    <!-------------------> 
+    <!------------------->
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+    <!-------------------> 
+    <!------------------->
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+    <!-------------------> 
+    <!------------------->
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <!-------------------------->
+    <!-----Project Section------>
+    <!--------------------------> 
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+    <!-------------------------->
+    <!-------Project One-------->
+    <!-------------------------->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+    <!-------------------------->
+    <!-------Project Two-------->
+    <!--------------------------> 
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+    <!-------------------------->
+    <!------Project Three------->
+    <!-------------------------->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <!-------------------------->
+    <!-----Contact Section------>
+    <!--------------------------> 
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <!-------------------------->
+    <!------Footer Section------>
+    <!--------------------------> 
+    <footer>
+      <nav>
+        <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -23,348 +458,8 @@
           </ul>
         </div>
       </nav>
-    <!---------------------->
-    <!---Menu para mobiles-->
-    <!---------------------->
-    <nav id="hamburguer-nav">
-        <div class="logo">Giovanny Fernandez</div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </div>
-        </div>
-      </nav>
-    <!---------------------->
-    <!------Sections-------->
-    <!---------------------->
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Gio Profile Picture">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello I'm</p>
-            <h1 class="title">Giovany Fernandez</h1>
-            <p class="section__text__p2">Marketing Specialist</p>
-    <!---------------------->
-    <!----Download CV------->
-    <!---------------------->
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
-    <!-------------------------->            
-    <!------Contact Me---------->
-    <!-------------------------->
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
-            </div>
-    <!-------------------------->
-    <!------Social Media-------->
-    <!-------------------------->
-            <div id="socials-container">
-            <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" target="_blank" onclick="location.href='https://www.linkedin.com/in/giovanny-fernandez/'"/>
-            <!--------->
-            <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/giofernandezrd'">
-            <!--------->
-            <img src="./Assets/instagram.png" alt="My Instagram Profile" class="icon" onclick="location.href='https://www.instagram.com/giofernandezrd/'">
-        </div>
-        </div>
-    </section>
-    <!-------------------------->
-    <!---------About------------>
-    <!-------------------------->
-        <section id="about">
-            <p class="section__text__p1">Get to Know More</p>
-            <h1 class="title">About Me</h1>
-            <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
-            </div>
-    <!-------------------------->
-    <!-----Experience----------->
-    <!-------------------------->
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./Assets/experience.png" alt="Experience icon" class="icon"/>
-                        <h3>Experience</h3>
-                        <p>5+ Years <br>Marketing Manager</p>.
-                    </div>
-    <!-------------------------->
-    <!-------Education---------->
-    <!-------------------------->
-                    <div class="details-container">
-                    <img src="./assets/education.png" alt="education icon" class="icon"/>
-                        <h3>Education</h3>
-                        <p>Marketing Management<br/>& Project Management</p>
-                </div>
-            </div>
-            <div class="text-container">
-                <p>Hola te doy la bienvenida a mi historia, mi nombre es Giovanny Fernandez, pero mis amigos me llaman Gio, inicie mi camino profesional como diseñador gráfico y luego creador de páginas web en WordPress, pero siendo un apasionado del crecimiento incursione en otras áreas dentro del departamento de marketing hasta llevar a ser gerente de mercadeo.</p><br>
-
-                <p>He realizado muchos estudios y he recolectado basta experiencia que podrás encontrar aquí, entre mis éxitos esta la elaboración de proyectos publicitarios, realización de eventos comerciales y empresariales, manejo de equipos en el área de marketing, lanzamiento de proyectos proceso para convertirme en programador FrontEnd.
-                </p>
-            </div>
-        </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
-        </section>
-
-    <!-------------------------->
-    <!-------Experience--------->
-    <!-------------------------->
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <!---------------------------------------------------> 
-                <!-----------------Left  Side------------------------> 
-                <!--------------------------------------------------->
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Marketing Manager</h2>
-                    <div class="article-container">
-    <!-------------------------->
-    <!-----Textos de Exp-------->
-    <!--------------------------> 
-
-                      <articule>
-                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                        <div>
-                            <h3>HTML</h3>
-                            <p>Experience</p>
-                        </div>
-                      </articule>
-                <!---------------------------------------------------> 
-                <!---------------------------------------------------> 
-                      <articule>
-                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon"/>
-                        <div>
-                            <h3>CSS</h3>
-                            <p>Experience</p>
-                        </div>
-                      </articule>
-                <!---------------------------------------------------> 
-                <!---------------------------------------------------> 
-                      <articule>
-                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon"/>
-                        <div>       
-                            <h3>SASS</h3>
-                            <p>Experience</p>
-                        </div>
-                      </articule>
-                <!---------------------------------------------------> 
-                <!---------------------------------------------------> 
-                      <articule>
-                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon"/>
-                        <div>
-                            <h3>JavaScript</h3>
-                            <p>Basic</p>
-                        </div>
-                      </articule>
-                <!---------------------------------------------------> 
-                <!---------------------------------------------------> 
-                      <articule>
-                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon"/>
-                        <div>
-                            <h3>Typescript</h3>
-                            <p>Basic</p>
-                        </div>
-                      </articule>
-                <!---------------------------------------------------> 
-                <!---------------------------------------------------> 
-                      <articule>
-                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon"/>
-                        <div>
-                            <h3>Material UI</h3>
-                            <p>Experience</p>
-                        </div>
-                      </articule>
-                    </div>
-                </div>
-            <!---------------------------------------------------> 
-            <!-----------------Right  Side-----------------------> 
-            <!--------------------------------------------------->
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Marketing Manager</h2>
-                    <div class="article-container">
-    <!-------------------------->
-    <!-----Textos de Exp-------->
-    <!--------------------------> 
-
-                      <articule>
-                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon"/>
-                        <div>
-                            <h3>Post SQL</h3>
-                            <p>Experience</p>
-                        </div>
-                      </articule>
-                <!---------------------------------------------------> 
-                <!---------------------------------------------------> 
-                      <articule>
-                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon"/>
-                        <div>
-                            <h3>Node JS</h3>
-                            <p>Experience</p>
-                        </div>
-                      </articule>
-                <!---------------------------------------------------> 
-                <!---------------------------------------------------> 
-                      <articule>
-                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon"/>
-                        <div>       
-                            <h3>Express JS</h3>
-                            <p>Experience</p>
-                        </div>
-                      </articule>
-                <!---------------------------------------------------> 
-                <!---------------------------------------------------> 
-                      <articule>
-                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon"/>
-                        <div>
-                            <h3>Git</h3>
-                            <p>Basic</p>
-                        </div>
-                      </articule>
-                <!---------------------------------------------------> 
-                <!---------------------------------------------------> 
-                      <articule>
-                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon"/>
-                        <div>
-                            <h3>Typescript</h3>
-                            <p>Basic</p>
-                        </div>
-                      </articule>
-                <!---------------------------------------------------> 
-                <!---------------------------------------------------> 
-                      <articule>
-                        <img src="./Assets/checkmark.png" alt="Experience icon" class="icon"/>
-                        <div>
-                            <h3>Material UI</h3>
-                            <p>Experience</p>
-                        </div>
-                      </articule>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
-    </section>
-    <!-------------------------->
-    <!-----Project Section------>
-    <!--------------------------> 
-    <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-    <div class="about-containers">
-    <!-------------------------->
-    <!-------Project One-------->
-    <!--------------------------> 
-        <div class="details-container  color-container">
-            <div class="article-container">
-                <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
-            </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
-                <div class="btn-container">
-   <!----Botones---->
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                        Github
-                    </button>
-
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-        Live Demo
-         </button>
-        </div>
-        </div>
-    <!-------------------------->
-    <!-------Project Two-------->
-    <!--------------------------> 
-    <div class="details-container  color-container">
-        <div class="article-container">
-            <img src="./Assets/project-2.png" alt="Project 2" class="project-img"/>
-        </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-<!----Botones---->
-        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                    Github
-                </button>
-
-        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-    Live Demo
-        </button>
-      </div>
-    </div>
-    <!-------------------------->
-    <!------Project Three------->
-    <!-------------------------->
-    <div class="details-container  color-container">
-        <div class="article-container">
-            <img src="./assets/project-3.png" alt="Project 3" class="project-img"/>
-        </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-<!----Botones---->
-        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                    Github
-                </button>
-
-        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-    Live Demo
-             </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
-  </section>
-    <!-------------------------->
-    <!-----Contact Section------>
-    <!--------------------------> 
-    <Section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-          </div>
-        </div>
-    </Section>
-    <!-------------------------->
-    <!------Footer Section------>
-    <!--------------------------> 
-    <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-        <p>Copyright &#169; 2024 Gio Fernandez. All Rights Reserved.</p>
-      </footer>
-     <script src="script.js"></script>
-    </body>
+      <p>Copyright &#169; 2024 Gio Fernández. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
