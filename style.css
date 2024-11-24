@@ -489,10 +489,10 @@ article .icon {
   margin-bottom: 25px;
 }
 .curriculum .fila .izquierda{
-  border-right: 2px solid #252A2E;
+  border-right: 2px solid #008000;
 }
 .curriculum .fila .derecha{
-  border-left: 2px solid #252A2E;
+  border-left: 2px solid #008000;
 }
 .curriculum .fila .item{
   padding: 25px;
@@ -504,14 +504,14 @@ article .icon {
   margin-bottom: 10px;
 }
 .curriculum .fila .item .casa{
-  color: #252A2E;
+  color: #008000;
   font-size: 22px;
   font-weight: bold;
   display: block;
 }
 .curriculum .fila .item .fecha{
   display: block;
-  color: #424242;
+  color: #008000 ;
   margin-bottom: 10px;
 }
 
