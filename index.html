@@ -1,525 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  </head>
-  <body>
-    <!-------------------->
-    <!---Menu Principal--->
-    <!-------------------->
-    <nav id="desktop-nav">
-      <div class="logo"></div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!---------------------->
-    <!---Menu para mobiles-->
-    <!---------------------->
-    <nav id="hamburger-nav">
-      <div class="logo"></div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Portfolio | GioFernandez</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Giovanny Fernández</p>
+            <span>.</span>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
         </div>
-      </div>
-    </nav>
-    <!---------------------->
-    <!------Sections-------->
-    <!---------------------->
-
-        <section id="profile">
-          <div class="section__pic-container">
-              <img src="./assets/profile-pic.png" alt="Gio profile picture" />
-          </div>
-          <div class="section__text">
-              <p class="section__text__p1">Hello, I'm</p>
-              <h1 class="title-name">Giovanny Fernández</h1>
-              <p class="section__text__p2"></p>
-              
-              <div class="animated-text-container">
-                  <span class="animated-text">Marketing Specialist</span>
-              </div>
-    <!---------------------->
-    <!----Download CV------->
-    <!---------------------->
-
-              <p class="resume">Download My Resume</p>
-              <div class="btn-container">
-                  <button class="btn btn-color-2" onclick="window.open('./assets/resume-e.pdf')">English</button>
-                  <button class="btn btn-color-1" onclick="window.open('./assets/resume-s.pdf')">Español</button>
-              </div>
-               
-    <!-------------------------->
-    <!------Social Media-------->
-    <!-------------------------->
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/giovanny-fernandez/'" />
-                      <!--GitHub-->
-          <img
-          src="./assets/github.png"
-          alt="Github profile"
-          class="icon"
-          onclick="location.href='https://github.com/giofernandezrd'"
-        />
-                    <!--Instgram-->
-        <img
-          src="./assets/instagram.png"
-          alt="Instagram profile"
-          class="icon"
-          onclick="location.href='https://www.instagram.com/giofernandezrd/'"
-        />
-          </div>
-      </section>
-
-    <!-------------------------->
-    <!---------About------------>
-    <!-------------------------->
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
+        <div class="nav-button">
+            <button class="btn" onclick="window.open('./preba 4/resume-e.pdf')" >Download CV <i class="uil uil-file-alt"></i></button>
         </div>
-    <!-------------------------->
-    <!------Experience---------->
-    <!-------------------------->
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>5+ years <br />Marketing Manager</p>
-            </div>
-    <!-------------------------->
-    <!-------Discipline--------->
-    <!-------------------------->
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Discipline</h3>
-              <p>Marketing Management<br/>& Project Management</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hola te doy la bienvenida a mi historia, mi nombre es Giovanny Fernandez, pero mis amigos me llaman Gio, inicie mi camino profesional como diseñador gráfico y luego creador de páginas web en WordPress, pero siendo un apasionado del crecimiento incursione en otras áreas dentro del departamento de marketing hasta llevar a ser gerente de mercadeo.
-            </p><br>
-            <p>
-              He realizado muchos estudios y he recolectado basta experiencia que podrás encontrar aquí, entre mis éxitos esta la elaboración de proyectos publicitarios, realización de eventos comerciales y empresariales, manejo de equipos en el área de marketing, lanzamiento de proyectos proceso para convertirme en programador FrontEnd.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <!-------------------------->
-    <!-------Experience--------->
-    <!-------------------------->
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-    <!---------------------------------------------------> 
-    <!-----------------Left  Side------------------------> 
-    <!--------------------------------------------------->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-    <!-------------------------->
-    <!-----Textos de Exp-------->
-    <!--------------------------> 
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-    <!-------------------> 
-    <!-------------------> 
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-    <!-------------------> 
-    <!------------------->
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-    <!-------------------> 
-    <!------------------->
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-    <!-------------------> 
-    <!------------------->
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-    <!-------------------> 
-    <!------------------->
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-    <!---------------------------------------------------> 
-    <!-----------------Right  Side-----------------------> 
-    <!--------------------------------------------------->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-    <!-------------------> 
-    <!------------------->
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-    <!-------------------> 
-    <!------------------->
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-    <!-------------------> 
-    <!------------------->
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-
-        <!-- SECCION CURRICULUM -->
-        <section id="curriculum" class="curriculum">
-          <div class="contenido-seccion">
-              <h1 class="title">Professional Skills</h1>
-              <div class="fila">
-                  <div class="col izquierda">
-                      <h3>Educación</h3>
-                      <div class="item izq">
-                          <h4>Arte y Multimedia</h4>
-                          <span class="casa">Universidad de Oxford</span>
-                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                          <div class="conectori">
-                              <div class="circuloi"></div>
-                          </div>
-                      </div>
-                      <div class="item izq">
-                          <h4>Arte y Multimedia</h4>
-                          <span class="casa">Universidad de Oxford</span>
-                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                          <div class="conectori">
-                              <div class="circuloi"></div>
-                          </div>
-                      </div>
-                      <div class="item izq">
-                          <h4>Arte y Multimedia</h4>
-                          <span class="casa">Universidad de Oxford</span>
-                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                          <div class="conectori">
-                              <div class="circuloi"></div>
-                          </div>
-                      </div>
-                  </div>
-    
-                  <div class="col derecha">
-                      <h3>Experiencia de trabajo</h3>
-                      <div class="item der">
-                          <h4>Front Developer</h4>
-                          <span class="casa">Nombre de Compañía</span>
-                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                          <div class="conectord">
-                              <div class="circulod"></div>
-                          </div>
-                      </div>
-                      <div class="item der">
-                          <h4>Front Developer</h4>
-                          <span class="casa">Nombre de Compañía</span>
-                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                          <div class="conectord">
-                              <div class="circulod"></div>
-                          </div>
-                      </div>
-                      <div class="item der">
-                          <h4>Front Developer</h4>
-                          <span class="casa">Nombre de Compañía</span>
-                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                          <div class="conectord">
-                              <div class="circulod"></div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-    <!-------------------------->
-    <!-----Project Section------>
-    <!--------------------------> 
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-    <!-------------------------->
-    <!-------Project One-------->
-    <!-------------------------->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-    <!-------------------------->
-    <!-------Project Two-------->
-    <!--------------------------> 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-    <!-------------------------->
-    <!------Project Three------->
-    <!-------------------------->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <!-------------------------->
-    <!-----Contact Section------>
-    <!--------------------------> 
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-
-
-    <!-------------------------->
-    <!------Footer Section------>
-    <!--------------------------> 
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Gio Fernández. All Rights Reserved.</p>
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Giovanny Fernández</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Apasionado, extrovertido y deseoso de crecer laboral y personalmente, buscando siempre nuevas metas de conocimiento que alcanzar. 
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Hire Me</button>
+                <button class="btn" onclick="window.open('./imagenes/resume-e.pdf')" >Download CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="social_icons">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon"><i class="uil uil-dribbble"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="assets/images/avatar.png" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>Hola te doy la bienvenida a mi historia, mi nombre es Giovanny Fernandez, pero mis amigos me llaman Gio, inicie mi camino profesional como diseñador gráfico y luego creador de páginas web en WordPress, pero siendo un apasionado del crecimiento incursione en otras áreas dentro del departamento de marketing hasta llevar a ser gerente de mercadeo.</p></br>
+
+                    <p>
+                        He realizado muchos estudios y he recolectado basta experiencia que podrás encontrar aquí, entre mis éxitos esta la elaboración de proyectos publicitarios, realización de eventos comerciales y empresariales, manejo de equipos en el área de marketing, lanzamiento de proyectos proceso para convertirme en programador FrontEnd.
+                    </p>
+                        
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Main Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Content Creation</span>
+                        <span>Copywriting</span>
+                        <span>Digital Marketing</span>
+                        <span>Social Media Ads</span>
+                        <span>SEO</span>
+                        <span>Project Management</span>
+                        <span>Client Relations</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>ittle Bit More</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>Javascript</span>
+                        <span>CSS</span>
+                        <span>WordPress Design</span>
+                        <span>Graphic Design</span>
+                        <span>Analytics</span>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+          </div>
+       </section>
+       <!-- -------------- CONTACT BOX ---------------- -->
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: giof15@hotmail.com</p>
+                    <p><i class="uil uil-phone"></i> Cel: +1849-447-1847</p>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Name">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </section>
+    </main>
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>John Doe .</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><i class="uil uil-instagram"></i></div>
+            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+            <div class="icon"><i class="uil uil-dribbble"></i></div>
+            <div class="icon"><i class="uil uil-github-alt"></i></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Giovanny Fernández</a> - All rights reserved</p>
+        </div>
     </footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ----- MAIN JS ----- -->
+    <script src="./main.js"></script>
+</body>
 </html>
