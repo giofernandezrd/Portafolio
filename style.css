@@ -52,10 +52,10 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: #008000;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color:#008000;
 }
 
 .logo {
@@ -201,6 +201,12 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: #008000;
+}
+
+.title-name{
+  font-size: 3rem;
+  text-align: center;
 }
 
 #socials-container {
@@ -215,6 +221,15 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  transition: transform 0.3s;
+}
+
+.icon:hover{
+  transform: scale(1.1);
+}
+
+.text-container{
+  text-align: justify;
 }
 
 /* BUTTONS */
