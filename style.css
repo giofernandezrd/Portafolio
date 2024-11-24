@@ -7,16 +7,17 @@
     --color-white: rgb(255, 255, 255);
 
     --text-color-second: rgb(68, 68, 68);
-    --text-color-third: rgb(2, 116, 21);
+    --text-color-third: #008000;
+    /*Botones*/
+    --first-color: #008000;
+    --first-color-hover: rgb(37, 37, 37);
 
-    --first-color: rgb(2, 116, 21);
-    --first-color-hover: rgb(36, 36, 36);
-
-    --second-color: rgb(2, 116, 21);
-    --third-color: rgb(2, 116, 21);
+    --second-color: #008000;
+    --third-color: rgb(0, 96, 240);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 
 }
+
 
 /* ----- BASE ----- */
 *{
@@ -25,12 +26,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 /* ----- SMOOTH SCROLL ----- */
 html{
     scroll-behavior: smooth;
 }
-
 /* ----- CHANGE THE SCROLL BAR DESIGN ----- */
 ::-webkit-scrollbar{
     width: 10px;
@@ -46,10 +45,7 @@ html{
 ::-webkit-scrollbar-thumb:hover{
     background: #bbb;
 }
-
-
 /* ---##-- REUSABLE CSS --##--- */
-
 /* ----- GLOBAL BUTTON DESIGN ----- */
 .btn{
     font-weight: 500;
@@ -67,12 +63,10 @@ html{
     background: var(--second-color);
     color: var(--color-white);
 }
-
 /* ----- GLOBAL ICONS DESIGN ----- */
 i{
-    font-size: 16px;
+    font-size: 25px;
 }
-
 /* ------- BASE -------- */
 body{
     background: var(--body-color);
@@ -81,7 +75,6 @@ body{
     width: 100%;
     position: relative;
 }
-
 /* ----- NAVIGATION BAR ----- */
 nav{
     position: fixed;
@@ -147,13 +140,10 @@ nav{
     background: var(--first-color);
     border-radius: 50%;
 }
-
-
 /* ----- WRAPPER DESIGN ----- */
 .wrapper{
     padding-inline: 10vw;
 }
-
 /* ----- FEATURED BOX ----- */
 .featured-box{
     position: relative;
@@ -161,7 +151,6 @@ nav{
     height: 100vh;
     min-height: 700px;
 }
-
 /* ----- FEATURED TEXT BOX ----- */
 .featured-text{
     position: relative;
@@ -215,8 +204,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
@@ -224,7 +213,6 @@ nav{
 .icon:hover{
     color: var(--first-color);
 }
-
 /* ----- FEATURED IMAGE BOX ----- */
 .featured-image{
     display: flex;
@@ -272,7 +260,6 @@ nav{
 .scroll-btn i{
     font-size: 20px;
 }
-
 /* ----- MAIN BOX ----- */
 .section{
     padding-block: 5em;
@@ -287,7 +274,6 @@ nav{
     display: flex;
     width: 50%;
 }
-
 /* -- ## --- RESUABLE CSS -- ## -- */
 .top-header{
     text-align: center;
@@ -307,12 +293,11 @@ h3{
     color: var(--text-color-second);
     margin-bottom: 15px;
 }
-
 /* ----- ABOUT INFO ----- */
 .about-info{
     position: relative;
     display: flex;
-    align-items: justify;
+    align-items: center;
     flex-direction: column;
     padding-block: 30px 70px;
     padding-inline: 20px;
@@ -322,10 +307,10 @@ h3{
     border-radius: 20px;
 }
 .about-info p{
-    text-align: justify;
+    text-align: center;
     font-size: 15px;
     color: #777;
-
+    text-align: justify;
 }
 .about-btn button{
     position: absolute;
@@ -338,7 +323,6 @@ h3{
 .about-btn button:hover{
     background: var(--first-color-hover);
 }
-
 /* ----- ABOUT / SKILLS BOX ----- */
 .skills-box{
     margin: 10px;
@@ -351,14 +335,68 @@ h3{
     flex-wrap: wrap;
     gap: 5px;
 }
+
+.skil-item:hover{
+    transform: scale(1.1);
+}
+
 .skills-list span{
     font-size: 14px;
-    background: var(--first-color);
+    background: #13a000;
     color: var(--color-white);
     padding: 2px 10px;
     border-radius: 5px;
 }
-
+/* ----- PROJECTS BOX ----- */
+.project-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.project-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 250px;
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    overflow: hidden;
+}
+.project-box>i{
+    font-size: 50px;
+    color: #00B5E7;
+    margin-bottom: 25px;
+}
+.project-box label{
+    font-size: 15px;
+    color: #777;
+}
+.project-box::after, .contact-info::after{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    background: var(--second-color);
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    z-index: 1;
+}
+.project-box:hover.project-box::after,
+.contact-info:hover.contact-info::after{
+    bottom: 0;
+}
+.project-box:hover.project-box i,
+.project-box:hover.project-box>h3,
+.project-box:hover.project-box>label{
+    color: var(--color-white);
+    z-index: 2;
+}
 /* ----- CONTACT BOX ----- */
 .contact-info{
     position: relative;
@@ -397,7 +435,6 @@ h3{
     color: #777;
     z-index: 2;
 }
-
 /* ----- CONTACT FORM ----- */
 .form-control{
     display: flex;
@@ -437,13 +474,12 @@ textarea{
     color: var(--color-white);
 }
 .form-button>.btn:hover{
-    background: #00B5E7;
+    background: #202020;
 }
 .form-button i{
     font-size: 18px;
     rotate: -45deg;
 }
-
 /* ----- FOOTER BOX ----- */
 footer{
     display: flex;
@@ -478,8 +514,6 @@ footer{
     font-size: 14px;
     margin-top: 10px;
 }
-
-
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){
     .featured-text{
@@ -490,7 +524,6 @@ footer{
         height: 320px;
     }
 }
-
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
     .nav-button{
@@ -567,11 +600,8 @@ footer{
     .project-box{
         width: 80%;
     }
-
 }
-
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
-
 @media only screen and (max-width: 540px){
     .featured-name{
         font-size: 40px;

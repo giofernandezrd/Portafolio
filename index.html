@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- --------- UNICONS ---------- -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
     <!-- --------- CSS ---------- -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+
     <!-- --------- FAVICON ---------- -->
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
     <title>Portfolio | GioFernandez</title>
 </head>
 <body>
@@ -16,7 +20,7 @@
     <!-- --------------- HEADER --------------- -->
       <nav id="header">
         <div class="nav-logo">
-            <p class="nav-name">Giovanny Fernández</p>
+            <p class="nav-name">Gio</p>
             <span>.</span>
         </div>
         <div class="nav-menu" id="myNavMenu">
@@ -30,18 +34,21 @@
                     <div class="circle"></div>
                 </li>
                 <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
                     <a href="#contact" class="nav-link">Contact</a>
                     <div class="circle"></div>
                 </li>
             </ul>
         </div>
-        <div class="nav-button">
-            <button class="btn" onclick="window.open('./preba 4/resume-e.pdf')" >Download CV <i class="uil uil-file-alt"></i></button>
-        </div>
         <div class="nav-menu-btn">
             <i class="uil uil-bars" onclick="myMenuFunction()"></i>
         </div>
       </nav>
+
+
     <!-- -------------- MAIN ---------------- -->
     <main class="wrapper">
        <!-- -------------- FEATURED BOX ---------------- -->
@@ -54,23 +61,22 @@
                 <p>I'm <span class="typedText"></span></p>
             </div>
             <div class="featured-text-info">
-                <p>Apasionado, extrovertido y deseoso de crecer laboral y personalmente, buscando siempre nuevas metas de conocimiento que alcanzar. 
+                <p>Apasionado, extrovertido y deseoso de crecer laboral y personalmente, buscando siempre nuevas metas de conocimiento que alcanzar.
                 </p>
             </div>
             <div class="featured-text-btn">
-                <button class="btn blue-btn">Hire Me</button>
-                <button class="btn" onclick="window.open('./imagenes/resume-e.pdf')" >Download CV <i class="uil uil-file-alt"></i></button>
+                <button class="btn blue-btn" onclick="window.open('./images/resume-s.pdf')" >Spanish CV</button>
+                <button class="btn" onclick="window.open('./images/resume-e.pdf')" >English CV <i class="uil uil-file-alt"></i></button>
             </div>
             <div class="social_icons">
                 <div class="icon"><i class="uil uil-instagram"></i></div>
                 <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                <div class="icon"><i class="uil uil-dribbble"></i></div>
                 <div class="icon"><i class="uil uil-github-alt"></i></div>
             </div>
           </div>
           <div class="featured-image">
             <div class="image">
-                <img src="assets/images/avatar.png" alt="avatar">
+                <img src="./images/profile-pic.png" alt="avatar">
             </div>
           </div>
           <div class="scroll-icon-box">
@@ -79,6 +85,7 @@
                 <p>Scroll Down</p>
             </a>
           </div>
+
        </section>
        <!-- -------------- ABOUT BOX ---------------- -->
        <section class="section" id="about">
@@ -89,48 +96,75 @@
             <div class="col">
                 <div class="about-info">
                     <h3>My introduction</h3>
-                    <p>Hola te doy la bienvenida a mi historia, mi nombre es Giovanny Fernandez, pero mis amigos me llaman Gio, inicie mi camino profesional como diseñador gráfico y luego creador de páginas web en WordPress, pero siendo un apasionado del crecimiento incursione en otras áreas dentro del departamento de marketing hasta llevar a ser gerente de mercadeo.</p></br>
-
-                    <p>
-                        He realizado muchos estudios y he recolectado basta experiencia que podrás encontrar aquí, entre mis éxitos esta la elaboración de proyectos publicitarios, realización de eventos comerciales y empresariales, manejo de equipos en el área de marketing, lanzamiento de proyectos proceso para convertirme en programador FrontEnd.
-                    </p>
-                        
+                    <p>Hola te doy la bienvenida a mi historia, mi nombre es Giovanny Fernandez, pero mis amigos me llaman Gio, inicie mi camino profesional como diseñador gráfico y luego creador de páginas web en WordPress, pero siendo un apasionado del crecimiento incursione en otras áreas dentro del departamento de marketing hasta llevar a ser gerente de mercadeo.</p><br>
+                    <p>He realizado muchos estudios y he recolectado basta experiencia que podrás encontrar aquí, entre mis éxitos esta la elaboración de proyectos publicitarios, realización de eventos comerciales y empresariales, manejo de equipos en el área de marketing, lanzamiento de proyectos proceso para convertirme en programador FrontEnd.</p>
                 </div>
             </div>
             <div class="col">
                 <div class="skills-box">
                     <div class="skills-header">
-                        <h3>Main Skills</h3>
+                        <h3>Skills</h3>
                     </div>
                     <div class="skills-list">
-                        <span>Content Creation</span>
-                        <span>Copywriting</span>
-                        <span>Digital Marketing</span>
-                        <span>Social Media Ads</span>
-                        <span>SEO</span>
-                        <span>Project Management</span>
-                        <span>Client Relations</span>
+                        <span class="skil-item">HTML</span>
+                        <span class="skil-item">CSS</span>
+                        <span class="skil-item">Bootstrap</span>
+                        <span class="skil-item">JavaScript</span>
+                        <span class="skil-item">Vue</span>
+                        <span class="skil-item">React</span>
+                        <span class="skil-item">Angular</span>
                     </div>
                 </div>
                 <div class="skills-box">
                     <div class="skills-header">
-                        <h3>ittle Bit More</h3>
+                        <h3>Learning Skills</h3>
                     </div>
                     <div class="skills-list">
-                        <span>HTML</span>
-                        <span>Javascript</span>
-                        <span>CSS</span>
-                        <span>WordPress Design</span>
-                        <span>Graphic Design</span>
-                        <span>Analytics</span>
+                        <span class="skil-item">HTML</span>
+                        <span class="skil-item">CSS</span>
+                        <span class="skil-item">Bootstrap</span>
+                        <span class="skil-item">JavaScript</span>
+                        <span class="skil-item">Vue</span>
+                        <span class="skil-item">React</span>
+                        <span class="skil-item">Angular</span>
                     </div>
+                    
                 </div>
-
+                <div class="skills-box">
+                
+                    
                 </div>
             </div>
           </div>
        </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <i class="uil uil-briefcase-alt"></i>
+                <h3>Completed</h3>
+                <label>15+ Finished Projects</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-users-alt"></i>
+                <h3>Clients</h3>
+                <label>25+ Happy Clients</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-award"></i>
+                <h3>Experience</h3>
+                <label>7+ Years in the field</label>
+            </div>
+          </div>
+       </section>
+
        <!-- -------------- CONTACT BOX ---------------- -->
+
        <section class="section" id="contact">
           <div class="top-header">
             <h1>Get in touch</h1>
@@ -141,7 +175,7 @@
                 <div class="contact-info">
                     <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
                     <p><i class="uil uil-envelope"></i> Email: giof15@hotmail.com</p>
-                    <p><i class="uil uil-phone"></i> Cel: +1849-447-1847</p>
+                    <p><i class="uil uil-phone"></i> Cel. +1849-447-1847</p>
                 </div>
              </div>
              <div class="col">
@@ -160,11 +194,14 @@
              </div>
           </div>
        </section>
+
     </main>
+
+
     <!-- --------------- FOOTER --------------- -->
     <footer>
         <div class="top-footer">
-            <p>John Doe .</p>
+            <p>Giovanny Fernández</p>
         </div>
         <div class="middle-footer">
             <ul class="footer-menu">
@@ -175,6 +212,9 @@
                     <a href="#about">About</a>
                 </li>
                 <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
@@ -182,18 +222,24 @@
         <div class="footer-social-icons">
             <div class="icon"><i class="uil uil-instagram"></i></div>
             <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-            <div class="icon"><i class="uil uil-dribbble"></i></div>
             <div class="icon"><i class="uil uil-github-alt"></i></div>
         </div>
         <div class="bottom-footer">
             <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Giovanny Fernández</a> - All rights reserved</p>
         </div>
     </footer>
+
     </div>
+
+
+
+
     <!-- ----- TYPING JS Link ----- -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
        <!-- ----- SCROLL REVEAL JS Link----- -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
     <!-- ----- MAIN JS ----- -->
     <script src="./main.js"></script>
 </body>
