@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
     <!-------------------->
@@ -45,34 +46,29 @@
     <!---------------------->
     <!------Sections-------->
     <!---------------------->
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Gio profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Giovanny Fernández</h1>
-        <p class="section__text__p2">Marketing Specialist</p>
-        <p class="resume">Download My Resume</p>
+
+        <section id="profile">
+          <div class="section__pic-container">
+              <img src="./assets/profile-pic.png" alt="Gio profile picture" />
+          </div>
+          <div class="section__text">
+              <p class="section__text__p1">Hello, I'm</p>
+              <h1 class="title">Giovanny Fernández</h1>
+              <p class="section__text__p2"></p>
+              
+              <div class="animated-text-container">
+                  <span class="animated-text">Marketing Specialist</span>
+              </div>
     <!---------------------->
     <!----Download CV------->
     <!---------------------->
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-e.pdf')"
-          >
-          English
-          </button>
-    <!-------------------------->            
-    <!------Contact Me---------->
-    <!-------------------------->
-          <button class="btn btn-color-1" 
-          onclick="window.open('./assets/resume-s.pdf')"
-          >
-          Español
-          </button>
-        </div>
+
+              <p class="resume">Download My Resume</p>
+              <div class="btn-container">
+                  <button class="btn btn-color-2" onclick="window.open('./assets/resume-e.pdf')">English</button>
+                  <button class="btn btn-color-1" onclick="window.open('./assets/resume-s.pdf')">Español</button>
+              </div>
+               
     <!-------------------------->
     <!------Social Media-------->
     <!-------------------------->
@@ -81,26 +77,24 @@
             src="./assets/linkedin.png"
             alt="LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/giovanny-fernandez/'"
-          />
-          
-          <!--GitHub-->
+            onclick="location.href='https://www.linkedin.com/in/giovanny-fernandez/'" />
+                      <!--GitHub-->
           <img
-            src="./assets/github.png"
-            alt="Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/giofernandezrd'"
-          />
-          <!--Instgram-->
-          <img
-            src="./assets/instagram.png"
-            alt="Instagram profile"
-            class="icon"
-            onclick="location.href='https://www.instagram.com/giofernandezrd/'"
-          />
-        </div>
-      </div>
-    </section>
+          src="./assets/github.png"
+          alt="Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/giofernandezrd'"
+        />
+                    <!--Instgram-->
+        <img
+          src="./assets/instagram.png"
+          alt="Instagram profile"
+          class="icon"
+          onclick="location.href='https://www.instagram.com/giofernandezrd/'"
+        />
+          </div>
+      </section>
+
     <!-------------------------->
     <!---------About------------>
     <!-------------------------->

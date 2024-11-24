@@ -160,6 +160,10 @@ section {
   display: flex;
 }
 
+.resume {
+  padding: 1rem;
+}
+
 /* PROFILE SECTION */
 
 #profile {
@@ -231,7 +235,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: #008000 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -241,7 +245,7 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: #008000;
   color: white;
 }
 
@@ -422,11 +426,17 @@ article .icon {
 
 /* FOOTER SECTION */
 
-footer {
-  height: 26vh;
-  margin: 0 1rem;
+
+.animated-text-container {
+  display: inline-block; 
+  overflow: hidden; 
+  white-space: nowrap; 
+  width: 250px; 
+  height: 30px; 
+  line-height: 30px; 
 }
 
-footer p {
-  text-align: center;
+.animated-text {
+  font-size: 24px;
+  white-space: nowrap; 
 }
