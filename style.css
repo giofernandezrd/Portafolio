@@ -210,6 +210,7 @@ nav{
     border-radius: 50%;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    color: #0060F0;
 }
 .icon:hover{
     color: var(--first-color);
@@ -371,7 +372,7 @@ h3{
 }
 .project-box>i{
     font-size: 50px;
-    color: #00B5E7;
+    color: #0060F0;
     margin-bottom: 25px;
 }
 .project-box label{
@@ -617,3 +618,110 @@ footer{
         width: 100%;
     }
 }
+
+/*Seccion de prueba*/
+
+/* SECCIÓN DE PROYECTOS */
+#projects {
+    padding: 4rem 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  #projects .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #008000;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* TARJETA DEL PROYECTO */
+  .project-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* IMAGEN DEL PROYECTO */
+  .project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s;
+  }
+  
+  .project-card:hover .project-img {
+    opacity: 0.8;
+  }
+  
+  /* INFORMACIÓN DEL PROYECTO */
+  .project-info {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  /* ENLACES DE PROYECTO */
+  .project-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .project-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #008000;
+    transition: color 0.3s;
+  }
+  
+  /* ESTILOS PARA LOS ÍCONOS */
+  .social-icon img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+  }
+  
+  .social-icon:hover img {
+    transform: scale(1.2);
+  }
+  
+  .web-icon {
+    background: #008000;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .web-icon:hover {
+    background: #004d00;
+  }
+  
