@@ -37,7 +37,7 @@ var typingEffect = new Typed(".typedText",{
   loop : true,
   typeSpeed : 100, 
   backSpeed : 80,
-  backDelay : 2000
+  backDelay : 1500
 })
 
 
@@ -70,7 +70,7 @@ sr.reveal('.top-header',{})
 const srLeft = ScrollReveal({
 origin: 'left',
 distance: '80px',
-duration: 2000,
+duration: 1500,
 reset: true
 })
 
@@ -81,7 +81,7 @@ srLeft.reveal('.contact-info',{delay: 100})
 const srRight = ScrollReveal({
 origin: 'right',
 distance: '80px',
-duration: 2000,
+duration: 1500,
 reset: true
 })
 

@@ -166,8 +166,9 @@ nav{
     background: var(--third-color);
     color: var(--color-white);
     padding: 3px 8px;
-    font-size: 12px;
+    font-size: 15px;
     border-radius: 5px;
+    text-align: justify;
 }
 .featured-name{
     font-size: 50px;
