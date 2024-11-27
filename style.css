@@ -268,7 +268,7 @@ nav{
 }
 .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     gap: 50px;
 }
@@ -370,6 +370,9 @@ h3{
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
 }
+
+
+
 .project-box>i{
     font-size: 50px;
     color: #0060F0;
@@ -660,7 +663,7 @@ footer{
   .project-img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
     transition: opacity 0.3s;
   }
   
@@ -685,6 +688,7 @@ footer{
     color: #666;
     line-height: 1.5;
     margin-bottom: 1rem;
+    text-align: justify;
   }
   
   /* ENLACES DE PROYECTO */
