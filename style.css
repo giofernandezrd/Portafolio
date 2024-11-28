@@ -200,6 +200,7 @@ nav{
     display: flex;
     margin-top: 5em;
     gap: 30px;
+
 }
 .icon{
     display: flex;
@@ -350,6 +351,8 @@ h3{
     border-radius: 5px;
 }
 /* ----- PROJECTS BOX ----- */
+
+
 .project-container{
     display: flex;
     width: 100%;
@@ -357,6 +360,7 @@ h3{
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .project-box{
     position: relative;
     display: flex;
@@ -371,13 +375,13 @@ h3{
     overflow: hidden;
 }
 
-
-
 .project-box>i{
     font-size: 50px;
     color: #0060F0;
     margin-bottom: 25px;
 }
+
+
 .project-box label{
     font-size: 15px;
     color: #777;
@@ -675,6 +679,7 @@ footer{
   .project-info {
     padding: 1rem;
     text-align: left;
+    flex-grow: 1;
   }
   
   .project-title {
@@ -696,6 +701,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
   }
   
   .project-links a {
